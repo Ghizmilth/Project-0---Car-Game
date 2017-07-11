@@ -1,4 +1,4 @@
-.col-md-8 {
+.col-xs-1 {
   background-color: lightblue;
   border: 1px solid black;
 }
@@ -7,6 +7,7 @@ th {
   background-color: lightblue;
   border: 1px solid grey;
   width: 32px;
+  font-size: 10px;
 }
 
 #slot1 {
