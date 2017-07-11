@@ -11,10 +11,10 @@ body {
 th {
   /*background-color: lightblue;*/
   border: 1px solid grey;
-  width: 50px;
+  width: 60px;
   height: 60px;
   font-size: 10px;
-  background-image: url(images/stonetrail.png) no-repeat center center fixed;
+  background-image: url(images/stonetrail.png);
 }
 
 
