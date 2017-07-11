@@ -1,6 +1,11 @@
 html {
   max-height: 100px;
-  background-image: 'images/forest.jpg';
+
+}
+
+body {
+  background: url(images/forest.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 th {
@@ -8,6 +13,11 @@ th {
   border: 1px solid grey;
   width: 40px;
   font-size: 10px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
 }
 
 #box1, #box73 {
@@ -25,4 +35,53 @@ th {
 
 .col-lg-1 {
   background-color: lightgrey;
+}
+
+.spacer {
+  height: 100px;
+}
+
+
+/* Styles the Popup Window*/
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#boxes #dialog {
+  width: 750px;
+  height: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+}
+
+#popupfoot {
+  font-size: 16pt;
+  position: absolute;
+  bottom: 0px;
+  width: 250px;
+  left: 50%;
+}
+
+#dialog {
+  text-aling: justified;
 }
