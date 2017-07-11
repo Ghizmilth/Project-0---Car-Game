@@ -1,3 +1,7 @@
+html {
+  max-height: 100px;
+  background-image: 'images/forest.jpg';
+}
 
 th {
   background-color: lightblue;
