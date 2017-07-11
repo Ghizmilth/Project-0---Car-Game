@@ -2,14 +2,23 @@
 th {
   background-color: lightblue;
   border: 1px solid grey;
-  width: 32px;
+  width: 40px;
   font-size: 10px;
 }
 
-#box1, #box50 {
+#box1, #box73 {
   background-color: green;
 }
 
+/*#box1, #box50 {
+  background-color: green;
+}*/
+
+
  {
   background-color: green;
+}
+
+.col-lg-1 {
+  background-color: lightgrey;
 }

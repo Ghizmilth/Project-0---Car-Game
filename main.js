@@ -8,14 +8,14 @@ $(document).ready(function() {
   console.log('You can code NOW!')
 
   var moveBox = 1;
-  var moveBox2 = 50;
+  var moveBox2 = 73;
 
 
 
   //This function moves player 1 when "Right Arrow" has been pressed
   $(document).keydown(function(press) {
     if (press.keyCode === 39) {
-      console.log('right arrow has been pressed times');
+      console.log('right arrow has been pressed');
       moveBox += 1;
       moveTroll1(moveBox);
       console.log(moveBox);
@@ -28,7 +28,7 @@ $(document).ready(function() {
   //This function moves player 1 when "Z" key has been pressed
   $(document).keydown(function(press2) {
     if (press2.keyCode === 90) {
-      console.log('right arrow has been pressed times');
+      console.log('right arrow has been pressed');
       moveBox2 += 1;
       moveTroll2(moveBox2);
       console.log(moveBox2);
@@ -45,7 +45,7 @@ $(document).ready(function() {
 //This function moves "player1" from left to right
 function moveTroll1(moveBox) {
 
-  if (moveBox !== 25) {
+  if (moveBox !== 36) {
     $('#box' + moveBox).css("background-color", "green");
     $('#box' + (moveBox - 1)).css("background-color", "lightblue");
     console.log("box number " + moveBox + " " + "has been ocupied");
@@ -62,7 +62,7 @@ function moveTroll1(moveBox) {
 //This function moves the "player2" from left to right
 function moveTroll2(moveBox2) {
 
-  if (moveBox2 !== 74) {
+  if (moveBox2 !== 108) {
     $('#box' + moveBox2).css("background-color", "green");
     $('#box' + (moveBox2 - 1)).css("background-color", "lightblue");
     console.log("box number " + moveBox2 + " " + "has been ocupied");
@@ -76,15 +76,15 @@ function moveTroll2(moveBox2) {
 
 };
 
-//This function moves compares who the winner of the game is
+//This function compares who the winner of the game is
 function compareWinner() {
-  if (finish1 === 25 && finish2 === 74) {
+  if (finish1 === 36 && finish2 === 108) {
     console.log("It's a draw");
     //alert("it's a draw");
-  } else if (finish1 === 25) {
+  } else if (finish1 === 36) {
     console.log("Player 1 has won!");
     //alert("player 1 Has won");
-  } else if (finish2 === 74) {
+  } else if (finish2 === 108) {
     console.log("Player 2 has won!");
     //alert("player 2 Has won");
   } else {
