@@ -1,0 +1,14 @@
+.col-md-8 {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+th {
+  background-color: lightblue;
+  border: 1px solid grey;
+  width: 32px;
+}
+
+#slot1 {
+  background-color: green;
+}

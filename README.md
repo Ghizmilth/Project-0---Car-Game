@@ -58,3 +58,10 @@ Let's consider object types Car, Route, Screen, Position, Finishline
 
 8. There is a reset button to clear screen and start the game all over again.
   - Place a reset button after `congratulations` or `draw` to reset the game, it will bring the game to its start.
+
+
+###Potential Challenges /Development Questions
+
+1. How to create different routes and block the extra areas so players don't get out of track.
+2. How to make sure when a draw is actually a draw when players are at the finish line.
+3. 
