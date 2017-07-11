@@ -2,7 +2,7 @@
 $(document).ready(function () {
 console.log('You can code NOW!')
 
-var moveBox = 0;
+var moveBox = 1;
 
 //Detects which key has been pressed so it moves player
 $(document).keydown(function(press) {
@@ -15,28 +15,26 @@ $(document).keydown(function(press) {
       return;
     }
 
-})
-
-
-
+  })
 });
 
 
 //This function moves the player from left to right
 function moveCar(moveBox) {
-  $()
 
-  //  if (moveBox) {
-      //var boxPosition = 0;
-      //boxPosition += 1;
-      console.log("box number " + moveBox  + " " + "has been ocupied");
-    } else {
-      console.log("can't move any more");
-    }
+  if (moveBox !== 25) {
+  $('#box'+moveBox).css("background-color", "green");
+  $('#box' + (moveBox-1)).css("background-color", "lightblue");
+  console.log("box number " + moveBox  + " " + "has been ocupied");
+} else {
+  console.log("can't move any more");
+  return;
+}
+//    }
 
 //  } else
     //return;
   //  console.log("can't move no more");
-}
+//}
 
 };
