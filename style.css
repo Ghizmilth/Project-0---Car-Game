@@ -14,8 +14,10 @@ th {
   width: 50px;
   height: 60px;
   font-size: 10px;
-  background-image: url(images/rocktrail.png);
+  background-image: url(images/stonetrail.png) no-repeat center center fixed;
 }
+
+
 
 h1 {
   color: white;
