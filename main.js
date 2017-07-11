@@ -1,11 +1,15 @@
+//Global variables
+var finish1 = 0;
+var finish2 = 0;
+
+
 //Wait for document to be ready
 $(document).ready(function() {
   console.log('You can code NOW!')
 
   var moveBox = 1;
   var moveBox2 = 50;
-  var finish1 = 0;
-  var finish2 = 0;
+
 
 
   //This function moves player 1 when "Right Arrow" has been pressed
@@ -47,7 +51,7 @@ function moveTroll1(moveBox) {
     console.log("box number " + moveBox + " " + "has been ocupied");
   } else {
     finish1 = moveBox;
-    compareWinner(finish1);
+    compareWinner();
     alert("Game is over");
     console.log("can't move any more");
     return;
@@ -64,7 +68,7 @@ function moveTroll2(moveBox2) {
     console.log("box number " + moveBox2 + " " + "has been ocupied");
   } else {
     finish2 = moveBox2;
-    compareWinner(finish2);
+    compareWinner();
     alert("Game is over");
     console.log("can't move any more");
     return;
@@ -72,15 +76,8 @@ function moveTroll2(moveBox2) {
 
 };
 
-//function comparePlayer1(moveBox) {
-//  finish1 = moveBox;
-//}
-
-//function comparePlayer2(moveBox2) {
-//  finish2 = moveBox2;
-//}
-
-function compareWinner(finish1, finish2) {
+//This function moves compares who the winner of the game is
+function compareWinner() {
   if (finish1 === 25 && finish2 === 74) {
     console.log("It's a draw");
     //alert("it's a draw");
@@ -93,4 +90,4 @@ function compareWinner(finish1, finish2) {
   } else {
     return;
   }
-}
+};
