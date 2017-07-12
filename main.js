@@ -87,8 +87,8 @@ $(document).ready(function() {
 function moveTroll1(moveBox) {
 
   if (moveBox !== 36) {
-    $('#box' + moveBox).css("background-image", "url(images/troll1.png)");
-    $('#box' + (moveBox - 1)).css("background-image", "url(images/roundstone.png)");
+    $('#box' + moveBox).css("background-image","url(images/troll1.png)");
+    $('#box' + (moveBox - 1)).css("background-image", "none");
     console.log("box number " + moveBox + " " + "has been ocupied");
   } else {
     finish1 = moveBox;
@@ -104,8 +104,8 @@ function moveTroll1(moveBox) {
 function moveTroll2(moveBox2) {
 
   if (moveBox2 !== 108) {
-    $('#box' + moveBox2).css("background-image", "url(images/troll2.png)");
-    $('#box' + (moveBox2 - 1)).css("background-image", "url(images/roundstone.png)");
+    $('#box' + moveBox2).css("background-image", "url(images/trumenium.png)");
+    $('#box' + (moveBox2 - 1)).css("background-image", "none");
     console.log("box number " + moveBox2 + " " + "has been ocupied");
   } else {
     finish2 = moveBox2;
@@ -132,3 +132,6 @@ function compareWinner() {
     return;
   }
 };
+
+
+//This function calls a modal box to declare the winner
