@@ -49,9 +49,10 @@ $(document).ready(function() {
 
   });
 
+
+//The player part
   var moveBox = 1;
   var moveBox2 = 73;
-  
   //This function moves player 1 when "Right Arrow" has been pressed
   $(document).keydown(function(press) {
     if (press.keyCode === 39) {
@@ -86,8 +87,8 @@ $(document).ready(function() {
 function moveTroll1(moveBox) {
 
   if (moveBox !== 36) {
-    $('#box' + moveBox).css("background-color", "green");
-    $('#box' + (moveBox - 1)).css("background-color", "lightblue");
+    $('#box' + moveBox).css("background-image", "url(images/troll1.png)");
+    $('#box' + (moveBox - 1)).css("background-image", "url(images/roundstone.png)");
     console.log("box number " + moveBox + " " + "has been ocupied");
   } else {
     finish1 = moveBox;
@@ -103,8 +104,8 @@ function moveTroll1(moveBox) {
 function moveTroll2(moveBox2) {
 
   if (moveBox2 !== 108) {
-    $('#box' + moveBox2).css("background-color", "green");
-    $('#box' + (moveBox2 - 1)).css("background-color", "lightblue");
+    $('#box' + moveBox2).css("background-image", "url(images/troll2.png)");
+    $('#box' + (moveBox2 - 1)).css("background-image", "url(images/roundstone.png)");
     console.log("box number " + moveBox2 + " " + "has been ocupied");
   } else {
     finish2 = moveBox2;
