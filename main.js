@@ -60,7 +60,7 @@ $(document).ready(function() {
   //"Right Arrow" or "Z" have been pressed respectively
 
   $(document).keydown(function(press) {
-    if (press.keyCode === 39) {
+    if (press.keyCode === 77) {
       console.log('right arrow has been pressed');
       moveBox += 1;
       moveTroll1(moveBox);
