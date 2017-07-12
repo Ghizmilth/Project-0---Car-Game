@@ -1,6 +1,9 @@
 //Global variables
 var finish1 = 0;
 var finish2 = 0;
+var draw = false;
+var play1Win = false;
+var play2Win = false;
 
 
 //Wait for document to be ready
@@ -53,22 +56,16 @@ $(document).ready(function() {
 //The player part
   var moveBox = 1;
   var moveBox2 = 73;
-  //This function moves player 1 when "Right Arrow" has been pressed
+  //This function moves player 1 and player2 when
+  //"Right Arrow" or "Z" have been pressed respectively
+
   $(document).keydown(function(press) {
     if (press.keyCode === 39) {
       console.log('right arrow has been pressed');
       moveBox += 1;
       moveTroll1(moveBox);
       console.log(moveBox);
-    } else {
-      return;
-    }
-
-  });
-
-  //This function moves player 1 when "Z" key has been pressed
-  $(document).keydown(function(press2) {
-    if (press2.keyCode === 90) {
+    } else if (press.keyCode === 90) {
       console.log('right arrow has been pressed');
       moveBox2 += 1;
       moveTroll2(moveBox2);
@@ -78,9 +75,6 @@ $(document).ready(function() {
     }
 
   });
-
-
-//});
 
 
 //This function moves "player1" from left to right
@@ -93,7 +87,7 @@ function moveTroll1(moveBox) {
   } else {
     finish1 = moveBox;
     compareWinner();
-    alert("Game is over");
+    //alert("Game is over");
     console.log("can't move any more");
     return;
   }
@@ -110,28 +104,25 @@ function moveTroll2(moveBox2) {
   } else {
     finish2 = moveBox2;
     compareWinner();
-    alert("Game is over");
     console.log("can't move any more");
     return;
   }
 
 };
 
+
 //This function compares who the winner of the game is
 function compareWinner() {
   if (finish1 === 36 && finish2 === 108) {
     console.log("It's a draw");
-    //alert("it's a draw");
+    $('.spacer').html("IT'S A DRAW!").addClass("animated rotateIn");
   } else if (finish1 === 36) {
     console.log("Player 1 has won!");
-    //alert("player 1 Has won");
+  $('.spacer').html("CYCLOPIUM WINS!").addClass("animated rotateIn");
   } else if (finish2 === 108) {
     console.log("Player 2 has won!");
-    //alert("player 2 Has won");
+  $('.spacer').html("TRUMENIUM WINS!").addClass("animated rotateIn");
   } else {
     return;
   }
 };
-
-
-//This function calls a modal box to declare the winner

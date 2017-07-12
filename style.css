@@ -8,6 +8,15 @@ html {
 body {
   background: url(images/forest.jpg) no-repeat center center fixed;
   background-size: cover;
+  color: white;
+
+}
+
+.spacer {
+  font-size: 60px;
+  font-family: 'Mystery Quest', cursive;
+  color: #e5f442;
+  
 
 }
 
@@ -173,4 +182,24 @@ p {
   to {
     transform: scale3d(1, 1, 1);
   }
+}
+
+
+
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation-name: rotateIn;
 }
