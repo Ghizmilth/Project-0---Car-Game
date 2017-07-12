@@ -80,7 +80,7 @@ $(document).ready(function() {
 //This function moves "player1" from left to right
 function moveTroll1(moveBox) {
 
-  if (moveBox !== 36) {
+  if (moveBox !== 26) {
     $('#box' + moveBox).css("background-image","url(images/troll1.png)");
     $('#box' + (moveBox - 1)).css("background-image", "none");
     console.log("box number " + moveBox + " " + "has been ocupied");
@@ -97,7 +97,7 @@ function moveTroll1(moveBox) {
 //This function moves the "player2" from left to right
 function moveTroll2(moveBox2) {
 
-  if (moveBox2 !== 108) {
+  if (moveBox2 !== 99) {
     $('#box' + moveBox2).css("background-image", "url(images/trumenium.png)");
     $('#box' + (moveBox2 - 1)).css("background-image", "none");
     console.log("box number " + moveBox2 + " " + "has been ocupied");
@@ -113,15 +113,16 @@ function moveTroll2(moveBox2) {
 
 //This function compares who the winner of the game is
 function compareWinner() {
-  if (finish1 === 36 && finish2 === 108) {
+  if (finish1 === 26 && finish2 === 99) {
     console.log("It's a draw");
     $('.spacer').html("IT'S A DRAW!").addClass("animated rotateIn");
-  } else if (finish1 === 36) {
+
+  } else if (finish1 === 26) {
     console.log("Player 1 has won!");
   $('.spacer').html("CYCLOPIUM WINS!").addClass("animated rotateIn");
-  } else if (finish2 === 108) {
+} else if (finish2 === 99) {
     console.log("Player 2 has won!");
-  $('.spacer').html("TRUMENIUM WINS!").addClass("animated rotateIn");
+  $('.spacer').html("TRYMENIUM WINS!").addClass("animated rotateIn");
   } else {
     return;
   }
