@@ -16,36 +16,39 @@ body {
   font-size: 60px;
   font-family: 'Mystery Quest', cursive;
   color: #e5f442;
-
-
+  text-align: center;
+  border-radius: 15px;
+  height: 100px;
 }
 
 .separator {
   height: 200px;
 }
+
 .position1 {
   background-image: url(images/Troll1.png) absolute;
 }
 
 #box1 {
   background-image: url(images/troll1.png);
-  position: absolute;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 #box73 {
   background-image: url(images/trumenium.png);
-  position: absolute;
-  height: 50px
+  width: 70px;
+  height: 70px
 }
 
 th {
   /*background-color: lightblue;*/
   text-decoration: none;
   color: transparent;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   font-size: 10px;
+  /*border: 1px solid black;*/
 }
 
 h1 {
@@ -75,9 +78,7 @@ p {
   background-color: lightgrey;
 }
 
-.spacer {
-  height: 100px;
-}
+
 
 .relative {
   position: relative;
@@ -215,9 +216,6 @@ p {
   font-size: 20px;
   font-family: 'Mystery Quest', cursive;
   margin: 100px;
-}
-
-.button {
-
-
+  padding: 20px;
+  border-radius: 15px;
 }
