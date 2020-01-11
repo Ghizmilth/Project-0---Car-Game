@@ -13,7 +13,7 @@ Troll game to play between 2 players on the same screen.
 Let's consider object types Car, Route, Screen, Position, Finishline
 
 
-###User Stories
+### User Stories
 
 1. A user will be able to see a set of instructions that will explain the basics of the game.
   a. Create an HTML structure to display text on the screen on its own
@@ -44,7 +44,7 @@ Let's consider object types Car, Route, Screen, Position, Finishline
 
 
 
-###Potential Challenges /Development Questions
+### Potential Challenges /Development Questions
 
 1. How to create different routes and block the extra areas so players don't get out of track.
 2. How to make sure when a draw is actually a draw when players are at the finish line.
