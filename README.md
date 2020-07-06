@@ -9,8 +9,8 @@ Troll game to play between 2 players on the same screen.
 4. The user wins once one of the players make it to the right side of the screen.
 5. There is a draw, if both trolls get to the finish line at the same time.
 
-### Data Structures for "Car Game"
-Let's consider object types Car, Route, Screen, Position, Finishline
+### Data Structures for "Race Game"
+Let's consider object types Troll, Screen, Position, Finishline
 
 
 ### User Stories
